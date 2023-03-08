@@ -16,7 +16,7 @@ int pow_opr(int n, int r)
 		else
 			return (-1);
 	}
-	return (0 + pow_opr(n, r + 1));
+	return (pow_opr(n, r + 1));
 }
 
 /**
