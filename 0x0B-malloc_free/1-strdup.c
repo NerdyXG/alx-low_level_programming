@@ -13,6 +13,8 @@ char *_strdup(char *str)
 	unsigned long i;
 	char *str_ptr;
 
+	if (str == NULL)
+		return (NULL);
 	str_ptr = malloc(sizeof(char) * sizeof(str));
 	if (str_ptr == NULL)
 		return (NULL);
