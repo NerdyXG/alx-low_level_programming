@@ -13,10 +13,10 @@ char *str_concat(char *s1, char *s2)
 {
 	char *s;
 	unsigned int i, j;
-	unsigned int len1 = sizeof(s1);
-	unsigned int len2 = sizeof(s2);
+	unsigned int len1 = strlen(s1);
+	unsigned int len2 = strlen(s2);
 
-	s = (char *) malloc(sizeof(char) * (len1 + len2));
+	s = (char *) malloc(sizeof(char) * (len1 + len2 + 1));
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
